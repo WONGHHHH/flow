@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/context/DataContext.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/document/FlowResolver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/enums/ResponseEnum.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/exception/ServiceDomException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/node/BaseNode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/node/Node.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/node/NodeHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/node/flow/FlowHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/part/BasePart.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/part/StartPart.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/service/Service.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/service/ServiceHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/service/ServiceLauncher.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/spring/ApplicationContextHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/template/TestA.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/template/TestB.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/template/TestC.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/template/TestD.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ts/flow/template/TestF.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/ts/flow/test/TestMain.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
