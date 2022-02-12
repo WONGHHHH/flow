@@ -45,7 +45,7 @@ public class FlowResolver {
 			//没有配置路径走默认的路径
 			path = FlowResolver.class.getResource("/").getPath() + "flow";
 		}else {
-			path = FlowResolver.class.getResource("/").getPath() + resource;
+			path = resource;
 		}
 		if(!new File(path).exists()) {
 			throw new ServiceDomException(path + "流程配置文件没有找到");
@@ -109,9 +109,6 @@ public class FlowResolver {
 			}
 			Document document = getDocument(file);
 			Element element = document.getRootElement();
-			if(!"execotor-flow".equals(element.getName())) {
-				throw new ServiceDomException(file.getName()+"配置文件根节点必须以为<execotor-flow></execotor-flow>");
-			}
 			if(root == null) {
 				root = element;
 				continue;
@@ -298,8 +295,8 @@ public class FlowResolver {
 	* @return      : void 
 	* @Description : 获取refpart
 	*/
-	public static Element getRefPart(String refpart) {
-		Element partElement = COMMON_PARTS.get(refpart);
+	public static Element getRefPart(String refPart) {
+		Element partElement = COMMON_PARTS.get(refPart);
 		return partElement;
 	}
 	

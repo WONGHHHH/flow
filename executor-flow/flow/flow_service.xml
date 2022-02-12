@@ -1,17 +1,17 @@
 <services>
-	<part-commom id="part-A" class="com.ts.flow.template.TestA"></part-commom>
-	<part-commom id="part-B" class="com.ts.flow.template.TestB"></part-commom>
+	<part-common id="part-A" class="com.ts.flow.template.TestA"></part-common>
+	<part-common id="part-B" class="com.ts.flow.template.TestB"></part-common>
 	<flow-common id="flow-common1"  desc="通用flow定义模板1">
 		<part id="part-C" class="com.ts.flow.template.TestC" desc="测试方法C"></part>
 	</flow-common>
 	<flow-common id="flow-common2"  desc="通用flow定义模板2">
 		<part id="part-D" class="com.ts.flow.template.TestD" desc="测试方法D"></part>
-		<ref refpart="part-common1"></ref><!-- 可以引入多个 -->
+		<ref refPart="part-B"></ref><!-- 可以引入多个 -->
 	</flow-common>
 
 	<service id="TEST" name="TEST" desc="测试服务">
 		<flow id="TESTFLOW" name="TESTFLOW" desc="测试流程">
-			<ref refpart="part-A"></ref><!-- 可以引入多个 -->
+			<ref refPart="part-A"></ref><!-- 可以引入多个 -->
 			<part id="part-F" class="com.ts.flow.template.TestF" desc="测试part"></part>
 			<subFlow ref="flow-common1"></subFlow><!--可以引入多个-->
 			<subFlow ref="flow-common2"></subFlow><!--可以引入多个-->

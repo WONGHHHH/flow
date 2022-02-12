@@ -20,10 +20,10 @@ public class NodeHelper {
 		Node node = new Node();
 		String name = element.getName();
 		if("ref".equals(name)) {
-			String refpartValue = element.attributeValue("refpart");
-			Element refPart = FlowResolver.getRefPart(refpartValue);
+			String refPartValue = element.attributeValue("refPart");
+			Element refPart = FlowResolver.getRefPart(refPartValue);
 			if(refPart == null) {
-				throw new ServiceDomException("当前引用的flow-common没有找到" + refPart);
+				throw new ServiceDomException("当前引用的part-common没有找到");
 			}
 			element = refPart;
 		}

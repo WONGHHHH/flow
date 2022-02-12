@@ -9,13 +9,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-/**
- * @Title: TestMain.java
- * @Description: 测试启动
- * @author wh
- * @date 2021年6月8日  
- * @version V1.0
- */
 public class TestMain {
 
     @Test
@@ -23,6 +16,7 @@ public class TestMain {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext-*.xml");
         ServiceLauncher serviceLauncher = new ServiceLauncher();
         serviceLauncher.setApplicationContext(ctx);
+        serviceLauncher.setResource("D:\\IDEA_WORK\\flow-old\\executor-flow\\flow");
         serviceLauncher.init();
         serviceLauncher.execute("TEST","TESTFLOW",new DataContext());
     }

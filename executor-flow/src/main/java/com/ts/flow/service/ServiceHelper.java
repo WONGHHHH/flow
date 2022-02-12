@@ -20,9 +20,6 @@ public class ServiceHelper {
 		if(StringUtils.isEmpty(serviceId)) {
 			throw new ServiceDomException("当前节点"+element.getName()+"id不允许为空");
 		}
-		if(StringUtils.isEmpty(serviceSource)) {
-			throw new ServiceDomException("当前节点"+element.getName()+"source不允许为空");
-		}
 		Service service = new Service();
 		service.setId(serviceId);
 		service.setSource(serviceSource);
